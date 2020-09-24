@@ -1,0 +1,17 @@
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/03/a/32Bit.hdl
+
+
+
+CHIP 32Bit {
+    IN in[32], load;
+    OUT out[32];
+
+    PARTS:
+    8Bit(in=in[0..7],load=load,out=out[0..7]);
+    8Bit(in=in[8..15],load=load,out=out[8..15]);
+    8Bit(in=in[16..23],load=load,out=out[16..23]);
+    8Bit(in=in[24..31],load=load,out=out[24..31]);
+    }
